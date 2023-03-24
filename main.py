@@ -1,7 +1,10 @@
-# Init variable
-book = "Demon slayer"
-print(book)
+# Init the variables
+x = 3
+y = 5
+name = "Elodie"
+name_dev = "Elogeek"
+z = x + y
 
-book = "Le tombeau des lucioles"
-print(book)
-
+print(name)
+print(z)
+print(len(name_dev))
