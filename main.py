@@ -2,24 +2,32 @@
 list_numbers = [1, 6, 98, 52, 1045, 3]
 hobbies =["travel", "Japan+++", "walking in the nature", "food"]
 
-# classez la liste
+# Sort the list in order
 list_numbers.sort()
-# supprimer le premier élément de la liste
+print(list_numbers)
+
+# Delete the first item in the list_numbers
 list_numbers.pop(0)
-# ajouter un nombre à la fin de la list_numbers
+
+# Add a number at the end of list_numbers
 list_numbers.append(5657)
-# récupérez le deuxième élément de la liste hobbies
+
+# Collect the second item from the hobbies list
 hobby = hobbies[1]
 print(hobby)
 
-# affichez la longueur de la liste
-print(len(list_numbers))
+# Add an item to the beginning of the hobbies list
+hobbies.insert(0, "listen to music")
+print(hobbies)
 
-# Init tuples
-# warning tuple is immuables (ne peuvent pas être modifiés)
+# Show hobby list length
+print(len(hobbies))
+
+# Init tuples (tuple is immutable (cannot be changed))
 number_tuple = (1, 2, 5, 9)
+print(number_tuple)
 
-# init dictionnaire ( = tableau associatif in PHP)
+# init dictionary ( = associative array in PHP)
 dico = {}
 dico = {
     "name": "Elodie",
@@ -30,15 +38,15 @@ dico = {
 
 print(dico)
 
-# Récupérer le nom via la key "name"
+# Retrieve the name via the "name" key in the array
 person = dico["name"]
 print(person)
 
-# Supprimez la key "age" du dictionnaire
+# Delete the "age" key from the dictionary
 person_age = dico.pop("age")
 print(dico)
 
-# Récupérez le nom du développeur
+# Retrieve the developer pseudo in the table
 person_pseudo = dico["pseudo_dev"]
 print(f"Le nom du dév est {person_pseudo}")
 
