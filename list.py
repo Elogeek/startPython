@@ -1,4 +1,5 @@
 import statistics
+# Import shuffle
 from random import shuffle
 
 notes = [
