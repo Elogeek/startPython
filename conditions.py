@@ -27,3 +27,23 @@ elif password_length > 5 and password_length <= 8:
 else:
     print("Mot de passe super!")
 print(password_length)
+
+# Exo travel in Japan
+person_age = int(input("Quel est votre âge?"))
+
+# So minor
+if person_age < 18:
+    total_trip_price = 7
+    print("Votre billet d'avion est de 7 euros")
+else:
+    total_trip_price = 15
+    print("Votre billet d'avion est de 15 euros")
+
+# If the person wants to travel in a kimono
+kimono_travel_request = input("Voulez vous voyager en kimono? (oui, non)")
+
+if kimono_travel_request == "oui":
+    total_trip_price += 5
+
+# Show total trip price
+print("Votre voyage vous coûtera au total", total_trip_price, "€")
