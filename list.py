@@ -46,3 +46,16 @@ for user in users:
         print("Newsletter non envoyée, l'adresse mail: ", user, ' n\'est pas valide!')
 
     print("Newsletter envoyée à: ", user )
+
+# boucle while
+
+# savings for the vacancies/mois
+savings_account = 100
+
+while savings_account < 2000:
+    # ajouter surplus
+    savings_account +=50
+    # afficher le résultat
+    print("votre épagne actuelle est de : ", savings_account,  "€")
+
+print("Youpi, c'est les vacances!")
