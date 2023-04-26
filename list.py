@@ -32,6 +32,17 @@ else:
 
 # Exo les boucles
 
-# boucle for
+# Boucle for
 for manga_number in range(1,5):
     print("Vous venez de lire votre manga n°",manga_number)
+
+users = ["blabla@gmail.com", "user@gmail.com", "user_two@yahoo.fr","truc@gmail.be","sakura@nihon.fr", "ceci_est_un_email.com"]
+blacklist = ["truc@gmail.be","ceci_est_un_email.com"]
+
+# j'envoie une newsletter à chaque utilisateur, j'affiche "newsletter envoyée" ou non
+for user in users:
+
+    if user in blacklist:
+        print("Newsletter non envoyée, l'adresse mail: ", user, ' n\'est pas valide!')
+
+    print("Newsletter envoyée à: ", user )
