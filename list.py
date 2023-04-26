@@ -29,3 +29,9 @@ if words_len < 5:
 # If the number of elements is greater than or equal to 5 show last 3
 else:
     print(words[words_len - 1], words[words_len - 2], words[words_len - 3])
+
+# Exo les boucles
+
+# boucle for
+for manga_number in range(1,5):
+    print("Vous venez de lire votre manga n°",manga_number)
