@@ -60,17 +60,17 @@ while savings_account < 2000:
 
 print("Youpi, c'est les vacances!")
 
-# j'ai 200 recettes sur youtube
-recipes_count = 2500
+# I have 500 recipes on youtube
+recipes_count = 500
 
-# audiance 10% de plus par mois après 2 ans
+# 15% more audience per month after 2 years
 months = 0
 
-# estimation de l'audiance des recettes
+# Revenue audience estimate
 while months <= 24:
-    # augmente l'audience
-    recipes_count *= 1.10
-    # afficher combien de fois les recettes on été visionnées
+    # Increase audience : +15% : 1+(15/100) = 1.15
+    recipes_count *= 1.15
+    # Display how many times recipes have been viewed
     print("Vos recettes ont été vu actuellement {} par vos abonnées".format(recipes_count))
-    # passe au mois suivant
+    # Don't forget to move on to the next month
     months += 1
