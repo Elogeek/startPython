@@ -9,7 +9,7 @@ notes = [
 ]
 shuffle(notes)
 print(notes)
-# module statistics
+# Module statistics
 result = statistics.mean(notes)
 print("La moyenne de l'élève est de {}".format(result))
 
@@ -30,16 +30,16 @@ if words_len < 5:
 else:
     print(words[words_len - 1], words[words_len - 2], words[words_len - 3])
 
-# Exo les boucles
+# Exercise the loops
 
-# Boucle for
+# For loop
 for manga_number in range(1,5):
     print("Vous venez de lire votre manga n°",manga_number)
 
 users = ["blabla@gmail.com", "user@gmail.com", "user_two@yahoo.fr","truc@gmail.be","sakura@nihon.fr", "ceci_est_un_email.com"]
 blacklist = ["truc@gmail.be","ceci_est_un_email.com"]
 
-# j'envoie une newsletter à chaque utilisateur, j'affiche "newsletter envoyée" ou non
+# I send a newsletter to each user, I display "newsletter sent" or not
 for user in users:
 
     if user in blacklist:
@@ -47,15 +47,30 @@ for user in users:
 
     print("Newsletter envoyée à: ", user )
 
-# boucle while
+# While loop
 
 # savings for the vacancies/mois
 savings_account = 100
 
 while savings_account < 2000:
-    # ajouter surplus
+    # Add surplus
     savings_account +=50
-    # afficher le résultat
+    # Show result
     print("votre épagne actuelle est de : ", savings_account,  "€")
 
 print("Youpi, c'est les vacances!")
+
+# j'ai 200 recettes sur youtube
+recipes_count = 2500
+
+# audiance 10% de plus par mois après 2 ans
+months = 0
+
+# estimation de l'audiance des recettes
+while months <= 24:
+    # augmente l'audience
+    recipes_count *= 1.10
+    # afficher combien de fois les recettes on été visionnées
+    print("Vos recettes ont été vu actuellement {} par vos abonnées".format(recipes_count))
+    # passe au mois suivant
+    months += 1
