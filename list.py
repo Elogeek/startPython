@@ -71,6 +71,7 @@ while months <= 24:
     # Increase audience : +15% : 1+(15/100) = 1.15
     recipes_count *= 1.15
     # Display how many times recipes have been viewed
-    print("Vos recettes ont été vu actuellement {} par vos abonnées".format(recipes_count))
+    print("Actuellement mes recettes ont été visionnés {} par mes abonnées".format(recipes_count))
     # Don't forget to move on to the next month
     months += 1
+
