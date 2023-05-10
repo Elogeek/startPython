@@ -14,3 +14,12 @@ def next_year():
 
 year = 2020
 next_year()
+
+def addition(number):
+    result = 5 + number
+    return result
+
+# check if correct response
+print("Le résultat du calcul est bien", addition(9))
+print("Le résultat du calcul est bien", addition(5))
+print("Le résultat du calcul est bien", addition(56))
