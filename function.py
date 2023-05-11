@@ -15,11 +15,17 @@ def next_year():
 year = 2020
 next_year()
 
-def addition(number):
-    result = 5 + number
-    return result
+# Create a function that returns the highest result between a and b
+def max_number(a,b):
+    if a < b:
+        return a
+    else:
+        return b
 
-# check if correct response
-print("Le résultat du calcul est bien", addition(9))
-print("Le résultat du calcul est bien", addition(5))
-print("Le résultat du calcul est bien", addition(56))
+# Value a (first number)
+number_a = int(input("Entrer un nombre"))
+# Value b (second number)
+number_b = int(input("Entrer un deuxième nombre"))
+max_value = max(number_a, number_b)
+# Result
+print("La plus grosse valeur est ",max_value )
